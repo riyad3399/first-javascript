@@ -1,47 +1,47 @@
 // problem 1 
 
-// function mindGame(inputNumber){
-//     let multiple = inputNumber * 3;
-//     let sum = multiple + 10;
-//     let divide = sum / 2;
-//     let minus = divide - 5;
-//     return minus;
-// }
-// const result = mindGame(50);
-// console.log(result);
+function mindGame(inputNumber){
+    let multiple = inputNumber * 3;
+    let sum = multiple + 10;
+    let divide = sum / 2;
+    let minus = divide - 5;
+    return minus;
+}
+const result = mindGame(50);
+console.log(result);
 
 
 // problem 2
 
-// function evenOdd(string){
-//     const stringLength = string.length;
-//     if(stringLength % 2 == 0){
-//          return 'even';
-//     }
-//     else{
-//         return 'odd';
-//     }
-// }
-// const number = evenOdd('Batch7')
-// let string = 'Batch7';
-// console.log(number);
+function evenOdd(string){
+    const stringLength = string.length;
+    if(stringLength % 2 == 0){
+         return 'even';
+    }
+    else{
+        return 'odd';
+    }
+}
+const number = evenOdd('Batch7')
+let string = 'Batch7';
+console.log(number);
 
 
 // problem 3
 
-// function isLGSeven(inputNum){
-//    let totalMinus = inputNum - 7;
-//    if(totalMinus < 7){
-//     return totalMinus;
-//    }
-//    else if(totalMinus > 7){
-//      let doubleInput = inputNum + inputNum;
-//      return doubleInput;
-//    }
+function isLGSeven(inputNum){
+   let totalMinus = inputNum - 7;
+   if(totalMinus < 7){
+    return totalMinus;
+   }
+   else if(totalMinus > 7){
+     let doubleInput = inputNum + inputNum;
+     return doubleInput;
+   }
 
-// }
-// const output = isLGSeven(15);
-// console.log(output);
+}
+const output = isLGSeven(15);
+console.log(output);
 
 
 // problem 4
