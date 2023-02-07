@@ -1,53 +1,65 @@
-// // problem 1 
+/* 
+ -----> problem 1 <-----
+
+Description: This is a calculation function, this function do into, plus, divided, Minus with any number. 
+*/
 
 function mindGame(inputNumber){
-    if(typeof minus == number){
-        return 'valid number'
-    }
     let multiple = inputNumber * 3;
     let sum = multiple + 10;
     let divide = sum / 2;
     let minus = divide - 5;
     return minus;
 }
-const result = mindGame(50);
-console.log(result);
+// const result = mindGame(5);
+// console.log(result);
 
 
-// // problem 2
+/* 
+ ------> problem 2 <------
+
+Description: This is a calculation function, this function calculate any string word length is even length or odd length .
+*/
 
 function evenOdd(string){
     const stringLength = string.length;
     if(stringLength % 2 == 0){
-         return 'even';
+        return 'even';
     }
     else{
         return 'odd';
     }
 }
-// const number = evenOdd('Batch7')
+// const number = evenOdd('chatgpt')
 // let string = 'Batch7';
 // console.log(number);
 
 
-// // problem 3
+/* 
+ -----> problem 3 <------
+
+Description: This is a calculation function, if the parameter number is positive number than result is double of the input.
+*/
 
 function isLGSeven(inputNum){
    let totalMinus = inputNum - 7;
    if(totalMinus < 7){
     return totalMinus;
    }
-   else if(totalMinus > 7){
+   else {
      let doubleInput = inputNum + inputNum;
      return doubleInput;
    }
-
 }
-// const output = isLGSeven(15);
+// const output = isLGSeven(-15);
 // console.log(output);
 
 
-// problem 4
+/*
+ -----> problem 4 <-----
+
+ Description: This is a function of negative or positive number checker.
+ */
 
 function findingBadData(numbers) {
   let negativeCount = 0;
@@ -61,12 +73,16 @@ function findingBadData(numbers) {
   }
   return negativeCount;
 }
-// let result = findingBadData([ -4, -9, -5, -33, -55]);
+// let result = findingBadData([-4, -9, -5, -33, -55]);
 // console.log(result);
 
 
 
-// problem 5
+/*
+ -----> problem 5 <-----
+
+Description: This is a function of one kind of international money converter.
+ */
 
 function gemsToDiamond(firstFriend, secondFriend, thirdFriend){
     const oneGems = 21;
@@ -82,7 +98,7 @@ function gemsToDiamond(firstFriend, secondFriend, thirdFriend){
         return totalDiamond;
     } 
 }
-// let total = gemsToDiamond(20, 200, 50);
+// let total = gemsToDiamond(100, 5, 1);
 // console.log(total);
 
 
