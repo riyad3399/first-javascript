@@ -1,6 +1,9 @@
-// problem 1 
+// // problem 1 
 
 function mindGame(inputNumber){
+    if(typeof minus == number){
+        return 'valid number'
+    }
     let multiple = inputNumber * 3;
     let sum = multiple + 10;
     let divide = sum / 2;
@@ -11,7 +14,7 @@ const result = mindGame(50);
 console.log(result);
 
 
-// problem 2
+// // problem 2
 
 function evenOdd(string){
     const stringLength = string.length;
@@ -22,12 +25,12 @@ function evenOdd(string){
         return 'odd';
     }
 }
-const number = evenOdd('Batch7')
-let string = 'Batch7';
-console.log(number);
+// const number = evenOdd('Batch7')
+// let string = 'Batch7';
+// console.log(number);
 
 
-// problem 3
+// // problem 3
 
 function isLGSeven(inputNum){
    let totalMinus = inputNum - 7;
@@ -40,32 +43,30 @@ function isLGSeven(inputNum){
    }
 
 }
-const output = isLGSeven(15);
-console.log(output);
+// const output = isLGSeven(15);
+// console.log(output);
 
 
 // problem 4
 
-// let numbers = [1, 2, 5, 8, -10, -3];
-// const positiveNum = [];
-// const negativeNum = [];
+function findingBadData(numbers) {
+  let negativeCount = 0;
+  let positiveCount = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < 0) {
+        negativeCount ++;
+    } else{
+        positiveCount;
+    }
+  }
+  return negativeCount;
+}
+// let result = findingBadData([ -4, -9, -5, -33, -55]);
+// console.log(result);
 
-// function findingBadData(items){
-//     if(items % 2 < 0){
-//         negativeNum.push(items);
-//         return items;
-//     }
-//     else if(items % 2 >= 0){
-//         positiveNum.push(items);
-//         return items;
-//     }
-// }
-// const allNumbers = findingBadData(numbers);
-// console.log(allNumbers);
 
 
 // problem 5
-
 
 function gemsToDiamond(firstFriend, secondFriend, thirdFriend){
     const oneGems = 21;
@@ -73,11 +74,16 @@ function gemsToDiamond(firstFriend, secondFriend, thirdFriend){
     const threeGems = 43;
 
     let totalDiamond = firstFriend * oneGems + secondFriend * twoGems + thirdFriend * threeGems;
-    let remainingDiamond =  totalDiamond - 2000;
-    return remainingDiamond;
+    if(totalDiamond > 2000){
+        let remainingDiamond =  totalDiamond - 2000;
+        return remainingDiamond;
+    } 
+    else if(totalDiamond < 2000){
+        return totalDiamond;
+    } 
 }
-let total = gemsToDiamond(100, 5, 1);
-console.log(total);
+// let total = gemsToDiamond(20, 200, 50);
+// console.log(total);
 
 
 
